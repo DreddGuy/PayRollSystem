@@ -9,13 +9,7 @@ namespace PayRollSystem.Models
     {
         public int Id { get; set; }
         public string EmployeeNo { get; set; }
-        public string FirstName { get; set; }
-        public string MiddleName { get; set; }
-        public string LastName { get; set; }
-        public string FullName
-        {
-            get { return FirstName + (string.IsNullOrEmpty(MiddleName) ? " " : (" " + (char?)MiddleName[0] + ".").ToUpper()) + " " + LastName; }
-        }
+        public string FullName { get; set; }
         public string Gender { get; set; }
         public DateTime DateOfBirth { get; set; }
         public DateTime DataJoined { get; set; } = DateTime.UtcNow;
@@ -27,5 +21,6 @@ namespace PayRollSystem.Models
         public string Address { get; set; }
         public string City { get; set; }
         public string PostCode { get; set; }
+        public DateTime DateJoined { get; internal set; }
     }
 }

@@ -17,7 +17,7 @@ namespace PayRollSystem.Models
         }
         public string Gender { get; set; }
         public DateTime DateOfBirth { get; set; }
-        public DateTime DataJoined { get; set; } = DateTime.UtcNow;
+        public DateTime DateJoined { get; set; } = DateTime.UtcNow;
         public string Role { get; set; }
         public string Email { get; set; }
         [Required(ErrorMessage = "NationalInsuranceNo is required"), StringLength(50), Display(Name = "NI No"), RegularExpression(@"^[A - CEGHJ -PR-TW-Z]{1}[A-CEGHJ-NPR-TW-Z]{1}[0-9]{6}[A-D\s$")]
