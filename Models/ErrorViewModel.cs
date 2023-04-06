@@ -1,5 +1,3 @@
-using System;
-
 namespace PayRollSystem.Models
 {
     public class ErrorViewModel
